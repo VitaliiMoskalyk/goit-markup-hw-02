@@ -76,7 +76,8 @@ body {
 .contact-link:hover,
 :focus,
 .link:hover,
-:focus {
+:focus,
+.link.current {
   color: var(--active-link-color);
 }
 
