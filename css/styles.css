@@ -1,191 +1,75 @@
-/*Переменные цветов сайта*/
+/*Задаю переменные основных цветов сайта*/
 :root {
-  --title-text-color: #212121;
-  --text-color: #757575;
-  --active-link-color: #2196f3;
-  --main-logo-color: #303438;
-  --background-color: #ffffff;
-  --active-button-color: #2196f3;
-  --off-button-color: #f5f4fa;
-  --footer-color: #2f303a;
+  --main-text-color: #212121;
+  --active-buttons-color: #2196f3;
+  --logo-color: #000000;
+  --contacts-header-color: #757575;
+  --buttons-color: #f5f4fa;
+  --active-buttons-txt-color: #ffffff;
 }
+
+/*Глобальный стиль для всего сайта*/
 
 body {
-  font-family: Roboto;
-  color: var(--title-text-color);
-  background-color: var(--background-color);
-  margin: 0;
-  padding: 0;
-  width: 1600px;
+  font-family: Roboto, Geneva, normal;
+  color: var(--main-text-color);
 }
 
-/*стиль всего хедера*/
-.header-all-elements {
-  width: 1600px;
-  height: 80px;
-  border: 1px solid #ececec;
-}
-.list {
-  display: inline-flex;
-  list-style-type: none;
-}
+/*Оформление логотипа сайта*/
 
-/*Стиль главного логотипа*/
-.main-logo {
-  font-family: Raleway;
+.logo {
+  font-family: Raleway, normal;
   font-weight: bold;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
-  margin: 24px 0px 25px 215px;
   text-decoration: none;
-  color: var(--main-logo-color);
+  color: var(--logo-color);
 }
-.main-logo-word-web {
-  color: var(--active-link-color);
+.three-letters-of-logo {
+  color: var(--active-buttons-color);
 }
 
-/*Стиль трех ссылок и двух элементов контактов хедера*/
-.page-header-links-list {
-  margin: 32px 0px 32px 93px;
-}
-.link {
-  padding-right: 50px;
+/*Оформление ссылок,почты и тел. в хэдере сайта*/
+.menu-nav-link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: var(--title-text-color);
+  line-height: 1.14;
   text-decoration: none;
-}
-
-.page-header-contacts-list {
-  margin: 32px 165px 32px;
-}
-
-.contact-link {
-  padding-right: 50px;
-  font-weight: 500;
-
-  font-size: 14px;
-  line-height: 16px;
   letter-spacing: 0.02em;
-  text-decoration: none;
-  color: var(--text-color);
-}
-.contact-link:hover,
-:focus,
-.link:hover,
-:focus,
-.link.current {
-  color: var(--active-link-color);
-}
-
-/*Main content of site*/
-/*Скрываю текст в H2*/
-.not-visibility {
-  display: none;
-  margin: 0 0 0 0;
-}
-/*Стиль кнопок - неактивных*/
-.button {
-  background: var(--off-button-color);
-  width: auto;
-  height: 38px;
-  border-radius: 4px;
-  border-style: none;
-  outline: none;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  font-style: normal;
-  text-align: center;
-  letter-spacing: 0.03em;
-  font-family: Roboto;
-  padding: 6px 22px 6px 22px;
-  margin: 0 8px 0 0;
+  color: var(--main-text-color);
   cursor: pointer;
 }
-/*Стиль кнопок -активных*/
-.button:hover,
-.button:focus {
-  background: var(--active-button-color);
-  color: var(--background-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+
+.menu-nav-link:focus,
+.menu-nav-link:hover {
+  color: var(--active-buttons-color);
 }
 
-.button-list {
-  display: inline-flex;
-  margin: 0px 0 0px 270px;
-  height: 0px;
-}
-
-.button-list h2 {
-  margin: 0px;
-}
-/*Раздел веб-сайтов*/
-.title-lists {
-  font-size: 18px;
-  line-height: 36px;
-  letter-spacing: 0.06em;
-  color: var(--title-text-color);
-  margin: 20px 24px 0px 24px;
-}
-.section-title {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.03em;
-  color: var(--text-color);
-  margin: 0px 24px 20px 24px;
-}
-
-.main-conteiner-all-bg {
-  width: 1300px;
-
-  margin: 87px 0 94px 215px;
-}
-.main-conteiner-all-bg ul {
-  padding: 0;
-  list-style-type: none;
-}
-.container-bg {
-  width: 370px;
-  height: 404px;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
-
-  display: inline-block;
-  margin: 30px 30px 0 0;
-}
-
-/*Стили футера*/
-
-.footer {
-  width: 1600px;
-  height: 252px;
-  background: var(--footer-color);
-  margin-top: 94px;
-  display: grid;
-}
-.main-logo.negative-btn {
-  margin: 60px 0 0 215px;
-}
-.footer,
-.footer .main-logo {
-  color: var(--background-color);
-}
-.footer-contacts {
-  margin: 20px 0 60px 215px;
-  width: 231px;
-  height: 81px;
-  font-style: normal;
-  font-weight: normal;
+.menu-nav-contacts {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--contacts-header-color);
+}
+
+/*Оформление кнопок для сортировки портфолио работ*/
+.menu-nav-link-sort {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 4px;
+  line-height: 1.6;
   letter-spacing: 0.03em;
+  background-color: var(--buttons-color);
+  border: none;
+  cursor: pointer;
 }
-.footer-mail-tel {
-  color: rgba(255, 255, 255, 0.6);
+.menu-nav-link-sort:hover,
+.menu-nav-link-sort:focus {
+  color: var(--active-buttons-txt-color);
+  background-color: var(--active-buttons-color);
 }
+
+/*Оформление стилей списка  работ портфолио*/
