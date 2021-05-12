@@ -6,6 +6,7 @@
   --contacts-header-color: #757575;
   --buttons-color: #f5f4fa;
   --active-buttons-txt-color: #ffffff;
+  --footer-color: #2f303a;
 }
 
 /*Глобальный стиль для всего сайта*/
@@ -29,6 +30,8 @@ body {
 .three-letters-of-logo {
   color: var(--active-buttons-color);
 }
+
+/*П О Р Т Ф О Л И О*/
 
 /*Оформление ссылок,почты и тел. в хэдере сайта*/
 .menu-nav-link {
@@ -73,3 +76,89 @@ body {
 }
 
 /*Оформление стилей списка  работ портфолио*/
+.portfolio-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio-title-type {
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: var(--contacts-header-color);
+}
+/*Footer*/
+/*другой цвет лого в футере*/
+.footer-color {
+  background-color: var(--footer-color);
+}
+
+.negative {
+  color: var(--active-buttons-txt-color);
+}
+
+.adress-footer {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--active-buttons-txt-color);
+}
+.contacts-footer {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/*С Т У Д И Я */
+
+/*Герой*/
+.main-title-studio {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--active-buttons-txt-color);
+  background-color: #2f303a; /*цвет задан для наглядности шрифта*/
+  text-transform: uppercase;
+}
+/*Наши качества*/
+.quality {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.quality-item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--contacts-header-color);
+}
+
+/*Чем мы занимаемся*/
+.main-site-sections {
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+/*Наша команда*/
+.name {
+  line-height: 1.2;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+}
+.proffession-name {
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--contacts-header-color);
+}
